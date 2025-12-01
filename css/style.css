@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 30px;
+}
+
+.logo img{
+  width: 100px;
+}
+
+.contenedor {
+  /* grid: 20px; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+header {
+  background: linear-gradient(to right, #cf142b, #ffcc02);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+.nav nav ul{
+  display: flex;
+  justify-content: flex-end;
+  gap:12px;
+  align-items:end;
+  list-style:none;
+}
+.nav nav ul a{
+  
+  color:white;
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:10px;
+  font-weight:600;
+  transition:all .18s ease;
+  background: rgba(255,255,255,0.06);
+  box-shadow: none;
+}
+
+
+
+
+
+.inicio {
+  background: url("https://live.staticflickr.com/8024/7164594357_51d49146f6_b.jpg")
+    no-repeat center center/cover;
+  height: 500px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  
+}
+
+.inicio-cont {
+  position: relative;
+  max-width: 800px;
+  padding: 0 20px;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 30px;
+}
+
+.inicio h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.inicio p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #cf142b;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Apartado que es */
+
+.contenedor-quees {
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #e8e8e8;
+  text-align: center;
+  
+}
+
+.contenedor-quees{
+  margin-top: 20px;
+  padding:18px;
+  border-radius:14px;
+  background-color: #6e3139; 
+}
+
+.contenedor-quees img{
+  width:300px;
+  height:auto;
+  border-radius:10px;
+  display:block;
+  margin: 20px auto;
+}
+
+.contenedor-quees h2{
+  font-size: 2.5rem;
+}
+
+/* Apartadp de origen */
+
+.contenedor-origen h2{
+
+text-align: center;
+font-size: 2.5rem;
+}
+
+.contenedor-origen{
+  margin: 20px 20px 20px;
+  padding:18px;
+  border-radius:14px;
+  background-color: #4f4949; 
+  color: #e8e8e8;
+}
+
+.contenedor-origen img{
+  display: grid;
+
+
+  width:100%;
+  height:auto;
+  width: 30%;
+  border-radius:10px;
+  display:block;
+}
+
+.diablos{
+  text-align: center;
+  
+}
+
+.diablos img{
+  margin-top: 20px;
+  border-radius: 50%;
+  width: 500px;
+}
+
+/* Apartado de la vestimenta */
+
+.contenedor-vestimenta{
+  color: #f5f5f5;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:20px;
+  padding:36px 20px;
+  align-items:start;
+}
+.infovestimenta{
+
+  padding:18px;
+  border-radius:14px;
+  background-color: #6e3139; 
+}
+
+.infovestimenta h3{
+  color: #fff;
+  margin-bottom:8px;
+}
+
+.infovestimenta p{
+  color:#e8e8e8;
+  margin-bottom:12px;
+}
+.infovestimenta img{
+  width:100%;
+  height:auto;
+  border-radius:10px;
+  display:block;
+  
+}
+
+
+/* apartado de impacto */
+
+
+
+.contenedor-impacto {
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #4f4949;
+  color: #e8e8e8;
+  border-radius: 10px;
+  
+  
+  
+}
+
+.contenedor-impacto img{
+   width:300px;
+  height:auto;
+  border-radius:10px;
+  display:block;
+  margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Apartado del footer */
+
+
+footer {
+  background: #333;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footerfinal {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+
+
+
+/* apartado media queries */
+
+@media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  header .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav nav ul {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .inicio {
+    height: 400px;
+  }
+
+  .inicio h2 {
+    font-size: 2rem;
+  }
+
+  .inicio p {
+    font-size: 1rem;
+  }
+
+  .contenedor-quees h2,
+  .contenedor-origen h2,
+  .contenedor-impacto h1,
+  #significado h2 {
+    font-size: 2rem;
+  }
+
+  .diablos img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .contenedor-vestimenta {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+  }
+
+  .contenedor-origen img {
+    width: 50%;
+  }
+}
+
+/* RESPONSIVE MÓVILES (480px y menos) */
+@media (max-width: 480px) {
+  .logo img {
+    width: 60px;
+  }
+
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav nav ul a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .inicio {
+    height: 300px;
+  }
+
+  .inicio-cont {
+    padding: 20px;
+  }
+
+  .inicio h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .inicio p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .contenedor-quees,
+  .contenedor-origen,
+  .contenedor-impacto {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .contenedor-quees h2,
+  .contenedor-origen h2,
+  .contenedor-impacto h1,
+  #significado h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .contenedor-quees p,
+  .contenedor-origen p,
+  .contenedor-impacto p,
+  #significado p {
+    font-size: 0.95rem;
+  }
+
+  .diablos {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .diablos img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contenedor-origen img {
+    width: 80%;
+  }
+
+  .infovestimenta {
+    padding: 15px;
+  }
+
+  .infovestimenta h3 {
+    font-size: 1.1rem;
+  }
+
+  .contenedor {
+    padding: 0 10px;
+  }
+
+  .footerfinal {
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+
+  .seccionfooter {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
