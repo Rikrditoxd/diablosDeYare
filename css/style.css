@@ -278,6 +278,7 @@ footer {
     font-size: 1.5rem;
   }
 
+  /* los elemenos se ajustan en columna a medida que la pantalla se haga mas horizontal */
   header .contenedor {
     display: flex;
     flex-direction: column;
@@ -365,6 +366,7 @@ footer {
     font-size: 0.9rem;
   }
 
+  /* ajuste de los contenedores para las versiones moviles */
   .contenedor-quees,
   .contenedor-origen,
   .contenedor-impacto {
@@ -372,6 +374,7 @@ footer {
     padding: 15px;
   }
 
+  /* ajustes de los header2 */
   .contenedor-quees h2,
   .contenedor-origen h2,
   .contenedor-impacto h1,
@@ -380,6 +383,7 @@ footer {
     margin-bottom: 10px;
   }
 
+  /* ajusto los parrafos */
   .contenedor-quees p,
   .contenedor-origen p,
   .contenedor-impacto p,
